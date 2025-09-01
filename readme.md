@@ -74,9 +74,8 @@ pip install numpy torch matplotlib seaborn tqdm pyyaml pandas scipy
 ---
 
 ## License
-
-Academic use only. See LICENSE for details.
-
+Academic use only.
+```
 ---
 
 For questions or issues, please open an issue or contact
