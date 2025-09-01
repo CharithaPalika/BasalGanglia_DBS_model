@@ -1,0 +1,53 @@
+# -----------------------------------------------------------
+# Configuration for the Rössler Oscillator Network Simulation
+# -----------------------------------------------------------
+
+# Parameters for the individual Rössler oscillators
+rossler_params:
+  k: 0.45  # Coupling strength between oscillators
+  psi: 0.0  # Stimulation phase
+  a: 0.2
+  b: 0.2
+  c: 5.7
+  d: 8.0      # Used in the network for feedback coupling term
+  omega: 0.8  # Intrinsic frequency
+  I_ext: 0.0  # External current (You can experiment with different I_ext values Eg. 0.1)
+
+# Parameters for the phase and amplitude estimator (PLL-like)
+phase_estimator_params:
+  omega_0: 1.0
+  damping_coef: 0.3
+  mu: 500.0
+
+# Parameters for the ATSP (Adaptive Tuning of Stimulation Phase) feedback controller
+atsp_feedback_params:
+  k1: 0.001
+  k2: 500.0
+  k3: 0.001
+  k4: 5.0
+
+# Parameters for the control input calculation
+control_input_params:
+  A0: 3.0                     # Maximum amplitude for the control signal
+  theta_tol_factor: 0.15      # Tolerance for phase matching, as a factor of pi
+
+# Parameters for main simulation loop
+closed_loop_simulation_params:
+  dt: 0.01                     # Time step for the simulation
+  num_oscillators: 100         # Number of Rössler oscillators in the network
+  total_time: 10000            # Stimulation time
+  DBS_time: 1000               # Duration at which DBS is applied
+  delta: 0.4                   # Duration of the on-pulse
+  Delta: 0.2                   # Duration of the off-pulse
+  pos_neg_pulse_ratio: 1.0     # Ratio of positive to negative pulse duration
+  a_stop_factor: 0.2           # Target amplitude for stopping stimulation
+
+open_loop_simulation_params:
+  dt: 0.01                     # Time step for the simulation
+  num_oscillators: 100         # Number of Rössler oscillators in the network
+  total_time: 10000            # Stimulation time
+  DBS_start_time: 1000         # Time at which DBS starts
+  input_freq: [19, 130]        # Frequency range for the input signal for open loop simulation in Hz
+  pos_width: 0.2               # Width of the positive pulse
+  neg_width: 0.2               # Width of the negative pulse
+  p_amp: 0.8                   # Amplitude of the control signal
