@@ -70,12 +70,6 @@ pip install numpy torch matplotlib seaborn tqdm pyyaml pandas scipy
 - **train:** Main training loop for running simulations (`BasalGanglia/train.py`)
 - **Rossler Network:** Models STN-GPe dynamics (`Rossler.py`)
 - **DBS Protocols:** Open-loop and closed-loop stimulation (`Open_loop.py`, `Closed_loop.py`)
-
----
-
-## License
-Academic use only.
-```
 ---
 
 For questions or issues, please open an issue or contact
