@@ -1,5 +1,5 @@
 # Basal Ganglia & STN-GPe Simulation Workspace
-
+The code is made available for review purposes
 This repository contains two main modules:
 
 1. **Decision Making (Basal Ganglia Model):**  
