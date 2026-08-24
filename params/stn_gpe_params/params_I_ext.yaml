@@ -1,0 +1,9 @@
+a : 0.2
+b : 0.2
+c : 5.7
+N : 100
+Iext : 0.25 # 1.75 for periodic and 0.25 for aperiodic
+d : 0.5 
+k: 0.5
+prob_active : 0.4
+omega : 0.8

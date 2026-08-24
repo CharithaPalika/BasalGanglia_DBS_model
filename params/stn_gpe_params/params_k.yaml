@@ -1,0 +1,9 @@
+a : 0.2
+b : 0.2
+c : 5.7
+N : 100
+Iext : 0.1
+d : 0.5
+k: 0.45 # set 0.5 for aperiodic and 0.2 for periodic
+prob_active : 0.4
+omega : 0.8
