@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.pyc
+
+# Noise simulation notebooks
+simulations/non_stationary_bandits/*noise*.ipynb
+simulations/iowa_gambling_task/*noise*.ipynb
