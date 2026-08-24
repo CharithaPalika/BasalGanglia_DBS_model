@@ -5,3 +5,4 @@ __pycache__/
 # Noise simulation notebooks
 simulations/non_stationary_bandits/*noise*.ipynb
 simulations/iowa_gambling_task/*noise*.ipynb
+simulations/non_stationary_bandits/DBS_simulations_loop_del_lim_noise.ipynb
